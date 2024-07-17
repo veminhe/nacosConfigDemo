@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: test
+  cloud:
+    nacos:
+      discovery:
+        #enabled: true
+        #改成自己的nacos地址
+        server-addr: 127.0.0.1:8848
+        #register-enabled: true
+        #用户名和密码
+        username: nacos
+        password: nacos
+        #命名空间
+        #namespace: public
+        #group: DEFAULT_GROUP
+        #ephemeral: true
+        #weight: 100
+      config:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+        file-extension: yaml
+        #group: DEFAULT_GROUP
+        #context-path: /nacos
+server:
+  port: 18080
